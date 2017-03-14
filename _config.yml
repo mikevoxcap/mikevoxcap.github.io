@@ -1,5 +1,7 @@
 exclude: [LICENSE, README.md]
 theme: jekyll-theme-slate
-title: Michael Hoffman Tech
+title: Michael Hoffman Tech - GitHub
 url: "https://mikevoxcap.github.io"
-description: "Personal GitHub page for Michael Hoffman Tech projects and knowledge base"
+description: "Michael Hoffman Tech - Projects and Knowledge Base"
+github:
+  - repository_url: https://github.com/mikevoxcap
