@@ -1,6 +1,14 @@
-exclude: [LICENSE, README.md]
-theme: jekyll-theme-slate
-
-title: Michael Hoffman Tech
-url: "https://mikevoxcap.github.io"
-description: "Personal GitHub page for Michael Hoffman Tech projects and knowledge base"
+safe: true
+markdown: kramdown
+exclude: [LICENSE, README.md, node_modules, bower_components]
+kramdown:
+  input: GFM
+gems:
+  - jekyll-redirect-from
+whitelist:
+  - jekyll-redirect-from
+defaults:
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"

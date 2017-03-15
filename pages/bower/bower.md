@@ -1,6 +1,12 @@
 ---
+layout: default
 title: Bower
-permalink: bower.md
+permalink: /bower/
+redirect_from:
+  - /bower.html
+sitemap:
+    priority: 0.1
+    lastmod: 2017-03-15T00:00:00-00:00
 ---
 # Bower
 

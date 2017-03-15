@@ -1,21 +1,34 @@
 ---
 layout: default
-title: Main Page
+layout_grid: true
+home: true
+angularjs: true
+title: Michael Hoffman Tech
+sitemap:
+priority: 1.0
+lastmod: 2017-03-15T00:00:00-00:00
 ---
-{% assign url_parts = page.url | split: '/' %}
-{% assign url_parts_size = url_parts | size %}
-{% assign rm = url_parts | last %}
-{% assign base_url = page.url | replace: rm %}
-
-<ul>
-    {% for node in site.pages %}
-    {% if node.url contains base_url %}
-    {% assign node_url_parts = node.url | split: '/' %}
-    {% assign node_url_parts_size = node_url_parts | size %}
-    {% assign filename = node_url_parts | last %}
-    {% if url_parts_size == node_url_parts_size and filename != 'index.html' %}
-    <li><a href='{{node.url}}'>{{node.title}}</a></li>
-    {% endif %}
-    {% endif %}
-    {% endfor %}
-</ul>
+<div ng-app="mht.home" ng-controller="HomeController" class="home-container">
+    <header class="home-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="intro-text">
+                        <span class="brand">Welcome to Michael Hoffman Tech's Knowledge Base</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+</div>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "url": "http://mikevoxcap.github.io",
+  "logo": "",
+  "name" : "Michael Hoffman Tech",
+  "sameAs" : [ "https://twitter.com/mhi_inc",
+    "https://github.com/mikevoxcap"]
+}
+</script>
