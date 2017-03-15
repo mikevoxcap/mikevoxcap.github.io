@@ -415,13 +415,13 @@ input.gsc-search-button {
 
 /* Main body section */
 .app-container .side-body {
-  margin-left: 75px;
+  margin-left: 15px;
   margin-right: 15px;
   -webkit-transition: all 0.25s;
   transition: all 0.25s; }
 
 .app-container.home .side-body {
-  margin-left: 60px;
+  margin-left: 0px;
   margin-right: 0px;
   padding-top: 60px; }
 

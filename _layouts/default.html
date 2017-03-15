@@ -56,26 +56,13 @@
 <body class="flat-blue">
 <div class="app-container{% if page.home == true %} home{% else %} expanded {% endif %}">
     <div class="row content-container">
-        <nav class="navbar navbar-inverse navbar-fixed-top navbar-top">
+        <nav class="navbar navbar-fixed-top navbar-top">
             <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-expand-toggle{% if page.home != true %} fa-rotate-90{% endif %}">
-                        <i class="fa fa-bars icon"></i>
-                    </button>
-                    <ol class="breadcrumb navbar-breadcrumb">
-                        <li class="active"></li>
-                    </ol>
-                    <button type="button" class="navbar-right-expand-toggle pull-right visible-xs">
-                        <i class="fa fa-th icon"></i>
-                    </button>
-                </div>
-                <ul class="nav navbar-nav navbar-right">
-                    <button type="button" class="navbar-right-expand-toggle pull-right visible-xs light">
-                        <i class="fa fa-times icon"></i>
-                    </button>
+                <ul class="nav navbar-nav navbar-left">
                     <li class="">
                         <a href="https://github.com/mikevoxcap" class="dropdown-toggle navlink"
-                           target="_blank" role="button"><i class="fa fa-github fa-2x"></i></a>
+                           target="_blank" role="button"><i class="fa fa-github fa-2x"></i>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -99,19 +86,21 @@
                     <div class="footer-above">
                         <div class="container">
                             <div class="row">
-                                <div class="footer-col col-lg-12 google-search">
+                                <div class="footer-col col-md-4 google-search">
                                     <script>
-                                        (function() {
-                                            var cx = '012121912381703442005:orqrvkniei0';
+                                        (function () {
+                                            var cx = '004687894124070278856:-ryvp1pk0xi';
                                             var gcse = document.createElement('script');
                                             gcse.type = 'text/javascript';
                                             gcse.async = true;
-                                            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                                            gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                                                '//cse.google.com/cse.js?cx=' + cx;
                                             var s = document.getElementsByTagName('script')[0];
                                             s.parentNode.insertBefore(gcse, s);
                                         })();
                                     </script>
                                     <gcse:search></gcse:search>
+
                                 </div>
                             </div>
                         </div>
@@ -157,22 +146,6 @@
 {% if page.home == true %}
 <script type="text/javascript" src="{{ site.url }}/js/services.js"></script>
 <script type="text/javascript" src="{{ site.url }}/js/index.js"></script>
-<script type="text/javascript" src="{{ site.url }}/js/marketplace-list.js"></script>
-<script type="text/javascript" src="{{ site.url }}/js/users.js"></script>
-{% endif %}
-{% if page.market == true %}
-<script type="text/javascript" src="{{ site.url }}/lib/js/c3-0.4.10.min.js"></script>
-<script type="text/javascript" src="{{ site.url }}/lib/js/d3-3.5.10.min.js"></script>
-<script type="text/javascript" src="{{ site.url }}/lib/js/angular-sanitize.min.js"></script>
-<script type="text/javascript" src="{{ site.url }}/lib/js/Showdown.min.js"></script>
-<script type="text/javascript" src="{{ site.url }}/lib/js/markdown.js"></script>
-<script type="text/javascript" src="{{ site.url }}/js/services.js"></script>
-<script type="text/javascript" src="{{ site.url }}/js/marketplace.js"></script>
-<script type="text/javascript" src="{{ site.url }}/js/marketplace-list.js"></script>
-<script type="text/javascript" src="{{ site.url }}/js/marketplace-details.js"></script>
-{% endif %}
-{% if page.companies-using-jhipster == true %}
-<script type="text/javascript" src="{{ site.url }}/js/users.js"></script>
 {% endif %}
 </body>
 
